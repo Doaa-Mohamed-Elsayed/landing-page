@@ -23,7 +23,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-###### reactnd-contacts-server
+###### backend
 www
 app.zip
 # Elastic Beanstalk Files
