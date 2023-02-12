@@ -10,9 +10,15 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
-      - checkout
-      # install dependencies in both apps
       - run:
-          name: hello
+       name: Back-End Install
+       command: |
+         npm run backend:install
+      - run:
+          name: Front-End Build
           command: |
-            echo "hello-world"
+            npm run frontend:build
+      - run:
+          name: Back-End Build
+          command: |
+            npm run backend:build
